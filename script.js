@@ -1,4 +1,4 @@
-"use strict"
+
 
 // let str=prompt("enter a string")
 // let rev=" "
@@ -8,17 +8,24 @@
 // }
 // console.log(rev)
 
-// let n=positiveUniq([-1,-2,-3,1,-4,-5,5])
+
+//---------------------------------------------------------
+
+// let n=positiveUniq([-1,2,-3,-4,-5,3,3,3,3,7,8,9,9])
 
 // function positiveUniq(x)
 // {
 //     var arr=[]
+//     var j=0;
 //     for(var i=0;i<x.length;i++)
 //     {
-//         if(x[i]>0)
+//         if(x[i]>0 && arr.indexOf(x[i])==-1)
 //         {
-//             arr[i]=x[i]
+//             arr[j]=x[i]
+//             j++
+
 //         }
+      
 //     }
 //     console.log(arr)
 // }
@@ -38,54 +45,65 @@
 
 //-------------------------------------------------------------------
 
-let a="hello"
-let b=[]
-for(var i=1;i<=a.length;i++)
-{
-    if(i%2==0)
-    {
-        b=a.toLowerCase();
-    } 
-    else{
-        b=a.toUpperCase();
-    }   
-}
-console.log(a)
-
-// function digits_count(n) {
-//     var count = 0;
-//     if (n >= 1) ++count;
-  
-//     while (n / 10 >= 1) {
-//       n /= 10;
-//       ++count;
+// let n=10;
+// let pattern="";
+// for(let i = 1; i <= n; i++){
+//     for(let j = 1; j <= n-i; j++){
+//         pattern+=" ";
 //     }
-  
-//     return count;
-//   }
 
-  
+//     for(let k = 1; k <= i*2-1; k++){
+//         pattern+="*";
+//     }
+//     pattern += "\n";
+// }
+// console.log(pattern);
 
+//--------------------------
 
-// function counting(number) { 
-//     let count = 0; 
-//     for (let n = number; n > 0; n = Math.floor(n / 10)) { 
-//         count++; 
-//     } 
-//     return count; 
-// } 
-  
-// let num = 12345; 
-// let result = counting(num); 
-// console.log(`Number of digits in ${num}: ${result}`);
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let str = '';
+//     for (let j = 1; j <= 2 * n; j++) {
+//         if ((i <= n-i)) {
+//             str +=  '* ';
+//         } else {
+//             str += '  ';
+//         }
+//     }
+ 
+//     console.log(str);
+// }
 
-let n=prompt("enter a number");
-let count=0;
-for(i=n.length;i>0;i--)
-{
-    if(i=Math.floor(i/10))
-    {
-        count++
-    }
-    console.log(count)
-}
+//------------------------------------------------
+
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let str = '';
+//     for (let j = 1; j <= 2 * n-1; j++) {
+//         if (i + j >= n + 1 && (i >= j - n + 1)) {
+//             str += '* ';
+//         } else {
+//             str += '  ';
+//         }
+//     }
+ 
+//     console.log(str);
+// }
+
+//------------------------------------------
+
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     let str = '';
+//     for (let j = 1; j <= 2 * n - 1; j++) {
+//         if (j >= n - i + 1 && j <= n + i - 1) {
+//             str += '* ';
+//         } else {
+//             str += '  ';
+//         }
+//     }
+
+//     console.log(str);
+// }
+
